@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-image: linear-gradient(to right, #051D36, #12365D, #051D36);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+}
+span
+{
+    top: 5px;
+    padding: 13px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+.en
+{
+    color: #4985a7;
+}
+.es
+{
+    color: #333;
+}
+.check
+{
+    position: relative;
+    width: 50px;
+}
+.check::before
+{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background: #333;
+    transition: 0.25s;
+}
+.check::after
+{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked::after
+{
+    left: 25px;
+    border: 2px solid #333;
+}
+.check:checked::before
+{
+    background: #333;
+}
+.coco
+{
+    position: absolute;
+    right:150px;
+    top: 55px;
+}
+img
+{
+    cursor: pointer;
+    font-size: 3.25rem;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+h3
+{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+}
+p
+{
+    width: 950px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.question
+{
+    text-align: left;
+}
+form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input, textarea
+{
+    margin: 1px;
+    padding: 8px;
+    width: 640px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 5px;
+}
+textarea
+{    
+    min-height: 100px;
+    resize: none;
+}
+form p
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 300px;
+}
+input[type="radio"]
+{
+    width: 13px;
+    margin-left: 350px;
+    margin-top: 0;   
+}
+.message
+{
+    margin-top: 30px;
+}
+.adjust
+{
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+.btn
+{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover
+{
+    background-color: #4985a7;
+    color: #ffffff;
+}
+p a
+{
+    color: #4985a7;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        width: 400px;
+        margin: auto;
+    }
+    h1
+    {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 5px;
+    }
+    h3
+    {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+    p
+    {
+        width: 90%;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+    input[type="radio"]
+    {
+        width: 13px;
+        margin-left: 350px;
+        margin-top: 0;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        left: 5px;
+    }
+    input, textarea
+    {
+        width: 100%;
+    }
+    form
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    form p
+    {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .adjust
+    {
+        margin-left: 0;
+        bottom: 50px;
+    }
+    .question
+    {
+        font-size: 1.1rem;
+    }
+    .kco
+    {
+        top: 580px;
+    }
+    .part
+    {
+        top: 580px;
+    }
+    .btn
+    {
+        margin-bottom: 10px;
+    }
+    .coco
+    {
+        position: absolute;
+		right: 55px;
+		top: 44px;
+    }
+	img
+	{
+		position: relative;
+		right: 66px;
+		width: 80px;
+	}
+    span
+    {
+        top: 5px;
+        padding: 0;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+    .check
+    {
+        transform: scale3d(0.7, 0.7, 0.7);
+        top: 3px;
+    }
+}

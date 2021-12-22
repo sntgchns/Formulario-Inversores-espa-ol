@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://ico.milenion.com/assets/images/logoIcon/favicon.png" type="image/x-icon">
+    <title>MileniON</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></li>
+</head>
+<body>
+    <div class="coco">
+        <label for="eng"><span class="en">English</span></label>
+        <input id="eng" type="checkbox" class="check" checked>
+        <span class="es">Español</span>
+    </div>
+    <a href="https://milenion.com"><img src="img/icon.png" alt="Logo" width="100px" title="MileniON"></a>
+    <h3>Bienvenid@ a MileniON, el Ecosistema Digital en Blockchain que revoluciona el mundo Empresarial, 
+        Laboral e Institucional.</h3>
+    <p>Si desea participar en nuestra próxima ronda privada de inversión, complete el siguiente formulario<!-- ó envíanos 
+        un e-mail personalizado con sus datos a <a href="mailto:inversor@milenion.com">inversor@milenion.com</a> -->
+        y nos pondremos en contacto con usted a la brevedad. Para una respuesta instantánea, contáctenos en 
+        <a href="https://t.me/eugen_fudulu/" target="_blank">Telegram</a>.</p>
+    <form action="enviar.php" method="post">
+        <input type="text" name="name" id="name" class="name" placeholder="Nombre" required>
+        <input type="text" name="apellido" id="apellido" class="apellido" placeholder="Apellido" required>
+        <input type="text" name="mail" id="mail" class="email" placeholder="Correo" required>
+        <input type="text" name="phone" id="subject" class="subject" placeholder="Teléfono">
+        <!--<div class="adjust">
+            <p class="question">Que desea adquirir?</p>
+            <input type="radio" class="kco" name="invest" value="Quiero obtener MileniON Coin (KCO)" required>
+            <label for="KCO">MileniON Coin (KCO)</label><br>
+            <input type="radio" class="part" name="invest" value="Quiero obtener participaciones de la Empresa" required>
+            <label for="participation">Participaciones de la Empresa</label><br>
+        </div>-->
+        <textarea name="message" class="message" placeholder="Escriba aquí su mensaje... " id="message" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+    </form>
+    <script src="js/mail.js"></script>
+</body>
+</html>
