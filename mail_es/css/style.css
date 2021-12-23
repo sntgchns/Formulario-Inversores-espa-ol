@@ -20,7 +20,7 @@ body
 span
 {
     top: 5px;
-    padding: 13px;
+    padding: 2px;
     position: relative;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -28,6 +28,7 @@ span
 .en
 {
     color: #4985a7;
+	cursor: pointer;
 }
 .es
 {
@@ -37,6 +38,7 @@ span
 {
     position: relative;
     width: 50px;
+	display: none;
 }
 .check::before
 {
@@ -188,12 +190,14 @@ p a
     {
         font-size: 1.3rem;
         text-align: justify;
+		width: 96%;
     }
     p
     {
-        width: 90%;
+        width: 92%;
         font-size: 0.9rem;
         margin-top: 5px;
+		text-align: justify;
     }
     input[type="radio"]
     {
@@ -244,13 +248,11 @@ p a
     .coco
     {
         position: absolute;
-		right: 55px;
+		right: 33px;
 		top: 44px;
     }
 	img
 	{
-		position: relative;
-		right: 66px;
 		width: 80px;
 	}
     span
@@ -265,5 +267,6 @@ p a
     {
         transform: scale3d(0.7, 0.7, 0.7);
         top: 3px;
+		display: none;
     }
 }
